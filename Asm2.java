@@ -89,7 +89,7 @@ public class Asm2 {
             }
         }
         boolean isExited = bank.isCustomerExisted(customerID);
-        while (isExited) {
+        while (!isExited) {
             System.out.println("So CCCD bi trung. Vui long nhap so CCCD khac");
             customerID = sc.next();
             isExited = bank.isCustomerExisted(customerID);
